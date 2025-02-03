@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB APPLICATION FORM</title>
+    <style>
+        body{font-family:Arial, sans-serif ;margin: 20px;}
+        form{max-width: 600px;margin:auto;padding: 20px;border: 1px solid#ccc;border-radius: 10px;box-shadow: 2px 2px 12px rgba(red, green, blue, alpha);}
+        h1 {text-align: center;}
+        label{font-weight:bold ;display: block;margin: 10px 0 5px; }
+        input,select,button{font-weight: 100;padding: 10px;margin-bottom: 15px;border:1px solid #ccc;border-radius: 5px;}
+        input[type="radio"]{width:auto;margin-right: 5px;}
+        .radio-group {display:flex;gap:15px ;margin-bottom: 15px ;}
+        .bottons{display: flex;justify-content: space-between;}
+        button{cursor: pointer;}
+        button[type="reset"]{background-color: #f44336;color:white}
+        button[type="submit"]{background-color:#4caf50;color:white}
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Job Application Form</h1>
+        <p>Thank you for your interest in working with us.please check below for available job opportunities that meet your criteria and send your application by filling out the job application form.</p>
+
+        <label>Name</label>
+        <div style="display: flex;gap: 10px;">
+            <input type="text" placeholder="first" name="first name">
+            <input type="text" placeholder="last" name="last name">
+        </div>
+
+        <label>Email</label>
+        <input type="email"placeholder="muhammad.muktar@example,com" name="email">
+
+        <label>position</label>
+        <select name="position">
+       
+            <option value="" disabled selected>-select -</option>
+            <option value="developer">developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+            <option value="other">other</option>
+        </select>
+        <label>Available data</label>
+        <input type="data" name="data">
+
+        <label>status</label>
+        <div class="radio-group">
+            <label><input type="radio" name="status" value="employed">Employed</label>
+            <label><input type="radio" name="status"value="self-employed">self-employed</label>
+            <label><input type="radio" name="status" value="unemployed"> unemployed</label>
+            <label><input type="radio" name="status"value="student"> student</label>
+        </div>
+
+        <label>resume link</label>
+        <input type="url" placeholder="https://www.example.com/" name="resume-link">
+
+        <label>resume upload</label>
+        <input type="file" name="resume-upload">
+
+        <label>refrences (optional)</label>
+        <div style="display: flex; gap: 10px;">
+            <input type="text"placeholder="first" name="ref-first-name">
+            <input type="text"placeholder="last" name="ref-last name">
+        </div>
+
+        <label>Refrence email</label>
+        <input type="email"placeholder="muhd.mlm@example.com" name="refrence email">
+
+        <div class="buttons">
+            <button type="reset">Reset</button>
+            <button type="submit">Apply</button>
+        </div>
+    </form>  
+</body>
+</html>
